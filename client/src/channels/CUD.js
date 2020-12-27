@@ -62,11 +62,8 @@ export default class CUD extends Component {
         this.campaignTypeLabels = campaignTypeLabels;
 
         this.sourceLabels = {
-            [CampaignSource.CUSTOM]: t('customContent'),
             [CampaignSource.CUSTOM_FROM_CAMPAIGN]: t('customContentClonedFromAnotherCampaign'),
-            [CampaignSource.TEMPLATE]: t('template'),
-            [CampaignSource.CUSTOM_FROM_TEMPLATE]: t('customContentClonedFromTemplate'),
-            [CampaignSource.URL]: t('url')
+            [CampaignSource.CUSTOM_FROM_TEMPLATE]: t('customContentClonedFromTemplate')
         };
 
         const sourceLabelsOrder = [
