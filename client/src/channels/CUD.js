@@ -67,7 +67,7 @@ export default class CUD extends Component {
         };
 
         const sourceLabelsOrder = [
-            CampaignSource.CUSTOM, CampaignSource.CUSTOM_FROM_CAMPAIGN , CampaignSource.TEMPLATE, CampaignSource.CUSTOM_FROM_TEMPLATE, CampaignSource.URL
+            CampaignSource.CUSTOM_FROM_CAMPAIGN , CampaignSource.CUSTOM_FROM_TEMPLATE
         ];
 
         this.sourceOptions = [];
