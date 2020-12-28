@@ -163,14 +163,14 @@ export default class List extends Component {
                 createButton = <LinkButton to={`/channels/${channel.id}/create`} className="btn-primary" icon="plus" label={t('createCampaign')}/>;
             } else {
                 createButton = (
-                    <>
+                    <span style={{display:"none"}}>
                         <LinkButton to={`/campaigns/clone`} className="btn-primary" icon="clone" label={t('cloneCampaign')}/>
                         <ButtonDropdown buttonClassName="btn-primary" menuClassName="dropdown-menu-right" icon="plus" label={t('createCampaign')}>
                             <DropdownLink to="/campaigns/create-regular">{t('regular')}</DropdownLink>
                             <DropdownLink to="/campaigns/create-rss">{t('rss')}</DropdownLink>
                             <DropdownLink to="/campaigns/create-triggered">{t('triggered')}</DropdownLink>
                         </ButtonDropdown>
-                    </>
+                    </span>
                 );
             }
         }
