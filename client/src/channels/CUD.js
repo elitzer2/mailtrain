@@ -549,10 +549,10 @@ export default class CUD extends Component {
 
                         <InputField label={t('subjectLine')} key="subject" id="subject"/>
 
-                        <InputField id="unsubscribe_url" label={t('customUnsubscribeUrl')}/>
+                        <span style={{display:"none"}}>
+                            <InputField id="unsubscribe_url" label={t('customUnsubscribeUrl')}/>
+                        </span>
                     </Fieldset>
-
-                    <hr/>
 
                     <Fieldset label={t('tracking')}>
                         <CheckBox id="open_tracking_disabled" text={t('disableOpenedTracking')}/>
