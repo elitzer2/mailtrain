@@ -617,10 +617,11 @@ export function getEditForm(owner, typeKey, prefix = '') {
                         </tr>
                         </tbody>
                     </table>
-                    <Trans i18nKey="forRssCampaignsTheFollowingFurtherTags">
-                        <p>For RSS campaigns, the following further tags can be used.</p>
-                    </Trans>
-                    <table className="table table-bordered table-condensed table-striped">
+                    <span style={{display:"none"}}>
+                        <Trans i18nKey="forRssCampaignsTheFollowingFurtherTags">
+                            <p>For RSS campaigns, the following further tags can be used.</p>
+                        </Trans>
+                        <table className="table table-bordered table-condensed table-striped">
                         <thead>
                         <tr>
                             <th>
@@ -690,6 +691,7 @@ export function getEditForm(owner, typeKey, prefix = '') {
                         </tr>
                         </tbody>
                     </table>
+                    </span>
                 </div>}
             </AlignedRow>
 
