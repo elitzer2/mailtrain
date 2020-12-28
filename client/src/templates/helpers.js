@@ -695,13 +695,15 @@ export function getEditForm(owner, typeKey, prefix = '') {
 
             {owner.templateTypes[typeKey].getHTMLEditor(owner)}
 
-            <ACEEditor
-                id={prefix + 'text'}
-                height="400px"
-                mode="text"
-                label={t('templateContentPlainText')}
-                help={<Trans i18nKey="toExtractTheTextFromHtmlClickHerePlease">To extract the text from HTML click <ActionLink onClickAsync={::owner.extractPlainText}>here</ActionLink>. Please note that your existing plaintext in the field above will be overwritten.</Trans>}
-            />
+            <span style={{display:"none"}}>
+                <ACEEditor
+                    id={prefix + 'text'}
+                    height="400px"
+                    mode="text"
+                    label={t('templateContentPlainText')}
+                    help={<Trans i18nKey="toExtractTheTextFromHtmlClickHerePlease">To extract the text from HTML click <ActionLink onClickAsync={::owner.extractPlainText}>here</ActionLink>. Please note that your existing plaintext in the field above will be overwritten.</Trans>}
+                />
+            </span>
         </div>
     );
 }
